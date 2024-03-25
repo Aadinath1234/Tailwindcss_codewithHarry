@@ -1,0 +1,46 @@
+#index.html: 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#8 hover, focus & other states  </title>
+  <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+ 
+    <div class="mx-4 bg-red-900 text-white ">
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia temporibus quod atque beatae et suscipit vel quidem consequatur quos!
+    </div>
+
+    <div class="mx-4">
+         <button class="btn">click me </button>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+#input.css: 
+@tailwind base;
+@tailwind components;
+.componentsafter{
+    text-align: center;
+    
+}
+
+@tailwind utilities;
+
+@layer components{
+.btn{
+    @apply text-white bg-red-400 rounded-xl px-2 py-1 text-sm;
+ }
+}
+
+
