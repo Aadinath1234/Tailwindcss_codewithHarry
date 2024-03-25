@@ -1,0 +1,43 @@
+#index.html: 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#8 hover, focus & other states  </title>
+  <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+ 
+    <div class="mx-44 bg-red-900 text-white text-vic">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam iure, dolore nihil maiores deleniti cupiditate assumenda explicabo sit voluptatum sed!
+
+      <button type="button" class="btn">yellow </button>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+#input.css: 
+@tailwind base;
+@tailwind components;
+
+.btn{
+   @apply text-white bg-yellow-400 hover:bg-yellow-400 focus:ring-4  focus:ring-yellow-300
+    font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900;
+
+
+}
+
+@tailwind utilities;
+
+.text-vic{
+    @apply text-yellow-200 bg-green-400;
+}
